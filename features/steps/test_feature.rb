@@ -1,8 +1,9 @@
 class TestFeature < Spinach::FeatureSteps
-  Given "I visit the home page" do
-    visit '/'
+  Given "I visit the products page" do
+    visit products_path
   end
-  Then "I should see \"Rails\"" do
-    save_and_open_page
+
+  Then "I should see \"Products\"" do
+    page.has_content?('Products').must_equal true
   end
 end

@@ -1,2 +1,3 @@
 require 'spinach-rails'
-require_relative '../../config/application'
+ENV['RAILS_ENV']='test'
+require_relative '../../config/environment'
