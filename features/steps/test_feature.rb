@@ -1,4 +1,4 @@
-Feature "Test feature" do
+class TestFeature < Spinach::FeatureSteps
   Given "I visit the home page" do
     visit '/'
   end
